@@ -1,0 +1,20 @@
+dataset:
+  name: "EMBER"
+  raw_path: "data/raw/ember2018/"
+  processed_path: "data/processed/ember_stream.parquet"
+  time_column: "timestamp"
+  label_column: "family_label"
+  num_classes: 10
+
+conformal_settings:
+  alpha_levels: [0.05, 0.10, 0.15, 0.20]
+  default_alpha: 0.10
+  raps_lambda: 0.05
+  raps_kreg: 2
+
+streaming:
+  initial_train_months: 6
+  warmup_calibration_months: 2
+  rolling_step: "1M"
+  window_candidates: [1, 2, 4, 8, 16] 
+  delta_tolerance: 0.05

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mac-drift"
+version = "0.1.0"
+description = "Mondrian Adaptive-Window Conformal Prediction under Temporal Drift"
+authors = [
+    { name = "Mariam Zakaria Moussa Ali" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "polars",
+    "scipy",
+    "scikit-learn",
+    "lightgbm",
+    "matplotlib",
+    "seaborn",
+    "tqdm"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

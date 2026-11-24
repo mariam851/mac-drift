@@ -1,0 +1,22 @@
+dataset:
+  name: "BODMAS"
+  raw_path: "data/raw/bodmas.npz"
+  metadata_path: "data/raw/bodmas_metadata.csv"
+  processed_path: "data/processed/bodmas_stream.parquet"
+  time_column: "timestamp"
+  label_column: "family"
+  num_classes: 12
+
+conformal_settings:
+  alpha_levels: [0.05, 0.10, 0.15, 0.20]
+  default_alpha: 0.10
+  raps_lambda: 0.08
+  raps_kreg: 1
+
+streaming:
+  initial_train_days: 180
+  calibration_window_min_days: 14
+  calibration_window_max_days: 120
+  window_grid: [7, 14, 28, 56, 112]
+  delta_tolerance: 0.05
+  

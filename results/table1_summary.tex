@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Empirical Streaming Evaluation on EMBER under Concept Drift}
+\label{tab:streaming_benchmark}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{2}{r}{marginal_coverage} & \multicolumn{2}{r}{min_class_coverage} & \multicolumn{2}{r}{max_class_violation} & \multicolumn{2}{r}{avg_set_size} \\
+ & mean & std & mean & std & mean & std & mean & std \\
+method &  &  &  &  &  &  &  &  \\
+\midrule
+ACI & 0.997800 & 0.002300 & 0.900700 & 0.106400 & 0.044200 & 0.071400 & 1.682000 & 0.025500 \\
+ERAPS & 0.997800 & 0.002300 & 0.900700 & 0.106400 & 0.044200 & 0.071400 & 1.698800 & 0.022700 \\
+Fixed-Window & 0.997800 & 0.002300 & 0.900700 & 0.106400 & 0.044200 & 0.071400 & 1.698800 & 0.022700 \\
+MAC-Drift (Ours) & 0.988200 & 0.007600 & 0.843800 & 0.080700 & 0.066500 & 0.066100 & 1.206500 & 0.022900 \\
+\bottomrule
+\end{tabular}
+\end{table}

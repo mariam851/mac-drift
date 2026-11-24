@@ -15,7 +15,7 @@ By unifying **Leave-One-Out (LOO) LightGBM bootstrap ensembles**, **Regularized 
 ## System Architecture
 
 <p align="center">
-  <img src="results/figures/fig2_architecture.png" alt="MAC-Drift End-to-End Architecture" width="95%">
+  <img src="results/figures/architecture.png" alt="MAC-Drift End-to-End Architecture" width="95%">
 </p>
 
 The framework consists of four main components:
@@ -68,8 +68,8 @@ Evaluated across **40 sequential streaming batches**, comprising **20,000 test s
 ### Benchmark Visualizations
 
 <p align="center">
-  <img src="results/figures/fig3_main_benchmark_tradeoff.png" alt="Coverage vs Efficiency Trade-off" width="48%">
-  <img src="results/figures/fig4_rolling_set_size.png" alt="Prediction Set Size Trajectory" width="48%">
+  <img src="results/figures/main_benchmark_tradeoff.png" alt="Coverage vs Efficiency Trade-off" width="48%">
+  <img src="results/figures/rolling_set_size.png" alt="Prediction Set Size Trajectory" width="48%">
 </p>
 
 ---
